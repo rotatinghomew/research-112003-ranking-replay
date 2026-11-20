@@ -1,0 +1,5 @@
+plan,entry,region,from_day,to_day,slate,horizon,min_support,max_weight,holdout,traffic,asof
+v1,chat,all,1,24,c|a,7,0.18,25,0.20,120,28
+v2,home,all,1,24,b|a,7,0.24,18,0.20,130,28
+v3,guide,north,1,16,d|a,7,0.15,20,0.15,85,28
+v4,guide,all,17,24,a|d,7,0.15,20,0.15,85,32

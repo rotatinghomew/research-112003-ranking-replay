@@ -1,0 +1,8 @@
+provider,slot,known,limit
+q1,evening,24,75
+q1,evening,31,30
+q2,evening,24,50
+q1,afternoon,24,40
+q2,afternoon,24,50
+q3,evening,24,57
+q3,afternoon,24,35
