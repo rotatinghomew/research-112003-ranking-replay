@@ -25,3 +25,17 @@ python3 -m unittest discover -s tests -v
 ```
 
 这项检查核对资料格式与引用，不生成业务结论。
+
+## 离线回放
+
+`analysis/replay.py` 在资料之上给出每个候选入口的比较口径与证据状态，
+结论见 `FINDINGS.md`：
+
+```sh
+python3 -m analysis.replay         # 文本结论
+python3 -m analysis.replay --json  # 机器可读
+```
+
+回放遵守几条硬口径：只用曝光当时的 `candidates` 快照；次序必须在 `support`
+中作为一条联合概率出现（不把位置边际概率相乘）；回执按 `(服务点, booking)`
+去重；未结窗口给出 0/1 端点并按用户重抽样；额度取最新一版并计入已批准流量。
